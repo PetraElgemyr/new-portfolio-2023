@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/fd2b1d7132.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script defer src="ts/main.ts" type="module"></script>
+  </head>
+  <body>
+    <div class="mega__container" id="home">
+      <div class="header" id="headerTag">
+        <nav class="navbar">
+          <a href="#home" id="navLogo" class="nav-logo">
+            <img
+              id="logoPictureStart"
+              class="logo__pic"
+              src="./assets/newBrownLogo.jpg"
+              alt="logo"
+            />
+            <img
+              id="logoPictureAbout"
+              class="logo__pic"
+              src="./assets/newPurpleLogo.jpg"
+              alt="logo"
+            />
+            <img
+              id="logoPictureProjects"
+              class="logo__pic"
+              src="./assets/newOrangeLogo.jpg"
+              alt="logo"
+            />
+            <img
+              id="logoPictureContact"
+              class="logo__pic"
+              src="./assets/newGreenLogo.jpg"
+              alt="logo"
+            />
+          </a>
+          <ul class="nav-menu">
+            <p id="closeBtn">&#10006;</p>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Work</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+      <div id="startpage"></div>
+    </div>
+    <div id="about" class="about">
+      <h3 class="about_title">Who am I?</h3>
+      <section class="big__wrapper">
+        <div class="about__wrapper" id="aboutWrapper"></div>
+        <div class="me__box" id="meBox">
+          <img src="./assets/meeeeColor.jpg" alt="Picture of me" />
+          <span class="me__description"
+            >My name is Petra Elgemyr and I am a front end developer student at
+            Medieinstitutet in Stockholm. I have always had an interest for
+            programming and discovered that I like to experiment with the looks
+            of a site. Here are a few of my projects. Some of them are school
+            projects and some of them are made in my free time just for the fun
+            of it. If you want to know more about me, you are welcome to contact
+            me.
+          </span>
+        </div>
+      </section>
+    </div>
+    <div id="projects">
+      <h3>Work</h3>
+      <section class="reposWrapper">
+        <div class="repo__container">
+          <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img
+                  src="./assets/api1.jpg"
+                  alt="Los Angeles"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="./assets/api2.jpg"
+                  alt="Chicago"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="./assets/api3.jpg"
+                  alt="New york"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+            <a
+              class="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div> -->
+          <img
+            class="repo__img"
+            src="./assets/api2.jpg"
+            alt="Movie GraphQL API"
+          />
+          <p class="repo__title">Movie API</p>
+          <p>
+            MovieAPI is a basic fullstack project. The site presents a list of
+            well known movies. You can search for movies to see if they are on
+            the list, show the list and add movies to the lsit. The project is
+            made with JavaScript and GraphQL, which I use Apollo Server for. The
+            data is stored in Google Sheet with SheetDB.
+          </p>
+          <a
+            class="repo__link"
+            href="https://github.com/PetraElgemyr/graphql-exercise"
+            target="_blank"
+            >Github link</a
+          >
+          <div>
+            <span class="repo__skills">GraphQL</span
+            ><span class="repo__skills">JavaScript</span
+            ><span class="repo__skills">CSS</span>
+          </div>
+        </div>
+
+        <div class="repo__container">
+          <!-- <h2>Carousel Example</h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img
+                  src="./assets/km1.2.jpg"
+                  alt="Los Angeles"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="./assets/km2.2.jpg"
+                  alt="Chicago"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="./assets/km3.jpg"
+                  alt="New york"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+            <a
+              class="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div> -->
+          <img
+            class="repo__img"
+            src="./assets/kmaster1.jpg"
+            alt="Movie GraphQL API"
+          />
+
+          <p class="repo__title">Webshop</p>
+          <p>
+            This webshop was my first agile group project. The assignment was to
+            create a webshop that could simulate a purchase. The customer can
+            add products to the shoppingcart, sort the products and "purchase"
+            the chosen products. This project was made with
+            <a
+              class="repo__link"
+              href="https://www.linkedin.com/in/maisah-juevesano-7b0a49141/"
+              target="_blank"
+              >Maisah Juevesano</a
+            >
+            and
+            <a
+              class="repo__link"
+              href="https://www.linkedin.com/in/hama-jaff-975082194/"
+              target="_blank"
+              >Hama Jaff</a
+            >.
+          </p>
+          <a
+            class="repo__link"
+            href="https://github.com/maisahjuevesano/AgiltProjektarbete"
+            target="_blank"
+            >Github link</a
+          >
+          <a
+            class="repo__link"
+            href="https://koksmastarn.netlify.app/"
+            target="_blank"
+            >Try it</a
+          >
+
+          <div>
+            <span class="repo__skills">TypeScript</span
+            ><span class="repo__skills">SCSS</span>
+          </div>
+        </div>
+        <!-- <div class="repo__container"></div> -->
+      </section>
+    </div>
+    <!-- <div id="skills"></div> -->
+    <div id="contact">
+      <h3>Contact</h3>
+      <div id="contact__texts"></div>
+    </div>
+    <footer class="logos"><div id="contact__links"></div></footer>
+  </body>
+</html>

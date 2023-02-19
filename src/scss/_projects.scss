@@ -1,0 +1,102 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+#projects {
+  // background-color: v.$projects-bg-color;
+  // background-color: rgba(208, 199, 192, 0.979);
+  background-color: #edceb2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding-top: 17%;
+
+  // @include m.mobileLarge {
+  //   padding-top: 10%;
+  // }
+
+  // @include m.tablet {
+  //   padding-top: 6%;
+  // }
+
+  h3 {
+    margin-bottom: 5%;
+    margin-top: 19%;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 5px 5px 0 rgba(76, 76, 76, 0.8);
+
+    @include m.mobileLarge {
+      margin-top: 12%;
+    }
+
+    @include m.tablet {
+      margin-top: 8%;
+    }
+  }
+
+  section.reposWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include m.tablet {
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    div.repo__container {
+      background-color: rgb(244, 244, 244);
+      box-shadow: 0 6px 17px 0 rgba(66, 66, 66, 0.8);
+      width: 95%;
+      margin: 2%;
+      padding: 3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      @include m.tablet {
+        width: 45%;
+      }
+
+      img.repo__img {
+        width: 90%;
+      }
+
+      p.repo__title {
+        margin: 2%;
+      }
+
+      a.repo__link {
+        text-decoration: none;
+        color: unset;
+        margin: 2%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        transition: border 0.2s;
+
+        &:hover {
+          // color: rgba(255, 132, 0);
+          border-color: rgb(0, 0, 0);
+        }
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        span.repo__skills {
+          margin: 4%;
+          background-color: v.$projects-header-color;
+          color: white;
+          padding: 3%;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+div#contact {
+  // color: white;
+  height: 80vh;
+  background-color: v.$contact-bg-color;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  h3 {
+    margin: 4%;
+    font-weight: 600;
+    text-shadow: 0 5px 5px 0 rgba(76, 76, 76, 0.8);
+    text-align: center;
+
+    @include m.mobileLarge {
+      margin-top: 12%;
+    }
+
+    @include m.tablet {
+      margin-top: 5%;
+      margin-bottom: 0;
+    }
+  }
+  div#contact__texts {
+    text-align: center;
+
+    p a {
+      color: black;
+    }
+  }
+}
+
+footer.logos {
+  width: 100%;
+  height: 20vh;
+  background-color: v.$contact-header-color;
+  // color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div#contact__links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    span.fa-github {
+      color: rgb(12, 12, 12);
+      font-size: 20pt;
+      margin: 10px;
+      transition: transform 0.1s;
+
+      &:hover {
+        transform: scale(1.8);
+      }
+    }
+
+    span.fa-linkedin {
+      color: #0072b1;
+      font-size: 20pt;
+      margin: 10px;
+      transition: transform 0.1s;
+
+      &:hover {
+        transform: scale(1.8);
+      }
+    }
+  }
+}

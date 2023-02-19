@@ -1,0 +1,138 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+.mega__container {
+  height: 100vh;
+  background-image: url("./../assets/IMG_4428[537].jpg");
+  background-size: cover;
+  background-position: left 15% top 50%;
+  // background-color: v.$primary-bg-color;
+
+  div#startpage {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .title__container {
+      background-color: rgb(25, 25, 25);
+      box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.8);
+      margin-top: 25%;
+      margin-bottom: 16%;
+      padding: 5%;
+      border-radius: 15px;
+      color: white;
+      font-size: 12pt;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // position: relative;
+      top: 0;
+
+      @include m.mobileLarge {
+        margin-top: 18%;
+        margin-bottom: 13%;
+      }
+
+      @include m.tablet {
+        margin-top: 14%;
+        margin-bottom: 8%;
+        padding: 3%;
+      }
+
+      @include m.laptop {
+        margin-top: 10%;
+        margin-bottom: 3%;
+      }
+
+      .title__title {
+        font-weight: 500;
+        flex-wrap: wrap;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid rgba(221, 140, 8, 0.874); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: mob__typing 2.7s steps(40, end),
+          blink-caret 1.2s step-end infinite;
+
+        @include m.tablet {
+          animation: tab__typing 2.7s steps(40, end),
+            blink-caret 1.2s step-end infinite;
+        }
+
+        @include m.laptop {
+          animation: lap__typing 2.5s steps(40, end),
+            blink-caret 1.2s step-end infinite;
+        }
+      }
+
+      /* The typing effect */
+      @keyframes mob__typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes tab__typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 96%;
+        }
+      }
+
+      @keyframes lap__typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 86%;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+    }
+
+    a.btn__next {
+      box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.8);
+      margin-top: 28%;
+      @include m.button;
+
+      @include m.mobileLarge {
+        padding: 3%;
+        border-radius: 33px;
+        margin-top: 18%;
+      }
+
+      @include m.tablet {
+        // padding: 2%;
+        // bottom: -10%;
+        margin-top: 15%;
+        border-radius: 40px;
+      }
+
+      @include m.laptop {
+        padding: 2%;
+        margin-top: 10%;
+        border-radius: 50px;
+      }
+    }
+  }
+}

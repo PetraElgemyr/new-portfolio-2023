@@ -1,0 +1,26 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+//https://fonts.google.com/specimen/Roboto+Slab?query=robot&preview.text=%3CPetra%20Elgemyr%3E&preview.text_type=custom
+
+html,
+body {
+  font-family: "Times New Roman", Times, serif;
+  // font-family: "Roboto Slab", serif; //   font-size: 13pt;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  //   @include m.tablet {
+  //     font-size: 15pt;
+  //   }
+  //   @include m.deskop{
+  //     font-size: 17pt;
+  //   }
+}
+
+* {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  box-sizing: border-box;
+}
