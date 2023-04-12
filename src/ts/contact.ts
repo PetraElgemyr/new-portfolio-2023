@@ -14,7 +14,7 @@ export const createHtmlForContacts = () => {
   mailContainer.innerHTML = "Email: ";
   const mailTag: HTMLAnchorElement = document.createElement("a");
   mailTag.href = "mailto: petra.elgemyr@medieinstitutet.se";
-  mailTag.innerHTML = "Petra.elgemyr@gmail.com";
+  mailTag.innerHTML = "Petra.elgemyr@medieinstitutet.se";
   mailContainer.append(mailTag);
 
   let linkedinContainer: HTMLParagraphElement = document.createElement("p");

@@ -58,8 +58,10 @@ export const createHtmlAboutMe = () => {
 <span class="blue">expected graduation: </span
 ><span class="green">2024</span> <span class="white"> ; </span></p>
 <p class="ed"><span class="orange"> }</span></p>
-
-
+<p class="ed" ><span class="orange">cv {</span></p>
+<p><span class="blue">link: </span><a href="https://www.dropbox.com/s/yhhbcws83bm71aw/cvPetraElgemyr.pdf?dl=0">cv_link</a>
+<span class="white"> ; </span></p>
+<p class="ed"><span class="orange"> }</p>
 
 `;
   // <p class="ed"><span class="orange"> cv { </span></p>

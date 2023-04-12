@@ -71,20 +71,20 @@ a {
     a.nav-logo {
       padding: 0;
       margin: 0;
-      width: 25%;
+      width: 45%;
       margin-left: 1.5rem;
 
       @include m.mobileLarge {
         margin-left: 1rem;
-        width: 23%;
+        width: 35%;
       }
 
       @include m.tablet {
-        width: 18%;
+        width: 20%;
       }
 
       @include m.laptop {
-        width: 15%;
+        width: 16%;
       }
 
       img {
