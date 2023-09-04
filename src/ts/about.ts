@@ -59,7 +59,7 @@ export const createHtmlAboutMe = () => {
 ><span class="green">2024</span> <span class="white"> ; </span></p>
 <p class="ed"><span class="orange"> }</span></p>
 <p class="ed" ><span class="orange">cv {</span></p>
-<p><span class="blue">link: </span><a href="https://www.dropbox.com/s/yhhbcws83bm71aw/cvPetraElgemyr.pdf?dl=0">cv_link</a>
+<p><span class="blue">link: </span><a href="https://www.dropbox.com/s/yhhbcws83bm71aw/cvPetraElgemyr.pdf?dl=0" target="_blank">cv_link</a>
 <span class="white"> ; </span></p>
 <p class="ed"><span class="orange"> }</p>
 
